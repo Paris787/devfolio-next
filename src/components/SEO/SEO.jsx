@@ -18,6 +18,10 @@ export default function SEO({
             <meta name="description" content={description} />
             <link rel="canonical" href={canonical} />
 
+            {/* Favicon 相关 */}
+            <link rel="icon" href="/favicon.ico" sizes="any" />
+            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
             <meta property="og:type" content={ogType} />
@@ -42,7 +46,7 @@ export default function SEO({
                             datePublished: articlePublishedTime,
                             author: {
                                 '@type': 'Person',
-                                name: 'Vigrombe',
+                                'name': 'Vigrombe',
                             },
                         }),
                     }}

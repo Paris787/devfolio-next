@@ -1,6 +1,6 @@
 ---
 title: "初识 JavaScript"
-date: "2026-06-01"
+date: "2026-05-13"
 tags: ["JavaScript", "入门"]
 summary: "学习 JS 的基本语法和 DOM 操作，让网页动起来。"
 ---

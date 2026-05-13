@@ -1,6 +1,6 @@
 ---
 title: "Flexbox 与 Grid 实战"
-date: "2026-05-20"
+date: "2026-05-07"
 tags: ["CSS", "布局"]
 summary: "比较两种现代布局方式，并用实际例子演示。"
 ---
