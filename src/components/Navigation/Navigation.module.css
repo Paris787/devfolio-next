@@ -1,0 +1,36 @@
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--space-md);
+}
+
+.nav a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+}
+
+/* 移动端菜单展开样式（配合 nav-open 类） */
+@media (max-width: 767px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--color-header-bg);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: var(--space-md);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 20;
+    }
+
+    .nav.nav-open ul {
+        display: flex;
+    }
+}

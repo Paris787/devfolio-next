@@ -1,0 +1,46 @@
+.formGroup {
+    margin-bottom: var(--space-md);
+}
+
+.label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: 500;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-input-bg);
+    color: var(--color-text);
+}
+
+.errorInput {
+    border-color: #d32f2f;
+}
+
+.errorMessage {
+    color: #d32f2f;
+    font-size: 0.875rem;
+    margin-top: var(--space-xs);
+    display: block;
+}
+
+.submitBtn {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.submitBtn:hover {
+    background-color: var(--color-primary-hover);
+}

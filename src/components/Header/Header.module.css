@@ -1,0 +1,63 @@
+.header {
+    background-color: var(--color-header-bg);
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-family: "Georgia", "楷体", "KaiTi", serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6b8b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: transform 0.2s;
+    user-select: none;
+    border: none;
+    background-color: transparent;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff9ec4, #ff889c, #ff7b8b);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    padding: 0 var(--space-xs);
+}
+
+@media (max-width: 767px) {
+    .hamburger {
+        display: inline-block;
+    }
+}
+
+.searchBtn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--color-primary);
+    padding: 0 var(--space-xs);
+}

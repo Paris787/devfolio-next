@@ -1,0 +1,107 @@
+/* ===================================
+   全局样式 & 设计令牌
+   桃蹊 DevSpace (Next.js)
+   =================================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #fff9f9;
+    --color-text: #4a2c2c;
+    --color-text-light: #7a5c5c;
+    --color-primary: #e6678c;
+    --color-primary-hover: #c94d6e;
+    --color-border: #f5d6dc;
+    --color-header-bg: #fff0f3;
+    --color-footer-bg: #fce4ec;
+    --color-card-bg: #ffffff;
+    --color-input-bg: #ffffff;
+
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 2rem;
+    --font-size-h1: 2.5rem;
+    --line-height: 1.6;
+
+    --max-width: 65ch;
+    --border-radius: 0.25rem;
+}
+
+[data-theme="dark"] {
+    --color-bg: #2b1a1a;
+    --color-text: #f5e3e3;
+    --color-text-light: #c9adad;
+    --color-primary: #ff8da1;
+    --color-primary-hover: #ff6b7f;
+    --color-border: #5a3030;
+    --color-header-bg: #3d2424;
+    --color-footer-bg: #3d2424;
+    --color-card-bg: #4a2e2e;
+    --color-input-bg: #3d2424;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: var(--color-primary);
+}
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+h1 { font-size: clamp(1.8rem, 5vw, var(--font-size-h1)); margin-bottom: var(--space-md); line-height: 1.2; }
+h2 { font-size: clamp(1.3rem, 3vw, var(--font-size-xl)); margin: var(--space-lg) 0 var(--space-sm); }
+h3 { font-size: var(--font-size-lg); margin-bottom: var(--space-xs); }
+p { margin-bottom: var(--space-md); }
+
+button {
+    cursor: pointer;
+}
+
+input, textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-input-bg);
+    color: var(--color-text);
+}
+
+/* 使用衬线字体作为标题字体 */
+h1, h2, h3 {
+    font-family: var(--font-serif), Georgia, "楷体", KaiTi, serif;
+}
