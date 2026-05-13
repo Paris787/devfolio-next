@@ -9,8 +9,7 @@ export default function SEO({
     articlePublishedTime,
 }) {
     const router = useRouter();
-    // 部署后请替换为你的真实域名，例如 https://你的项目名.vercel.app
-    const siteUrl = 'https://devfolio-next-xxxxx.vercel.app'; // 先占位，部署后更新
+    const siteUrl = 'https://devfolio-next-nine.vercel.app';
     const canonical = `${siteUrl}${router.asPath}`;
 
     return (
